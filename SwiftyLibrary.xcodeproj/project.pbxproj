@@ -11,6 +11,10 @@
 		470F790F2ADD698B0058A097 /* SwiftyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F79042ADD698B0058A097 /* SwiftyLibrary.framework */; };
 		470F79142ADD698B0058A097 /* SwiftyLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F79132ADD698B0058A097 /* SwiftyLibraryTests.swift */; };
 		470F79152ADD698B0058A097 /* SwiftyLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 470F79072ADD698B0058A097 /* SwiftyLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		470F79252ADD6BED0058A097 /* SwiftyLibraryExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F79242ADD6BED0058A097 /* SwiftyLibraryExamplesApp.swift */; };
+		470F79272ADD6BED0058A097 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F79262ADD6BED0058A097 /* ContentView.swift */; };
+		470F79292ADD6BEE0058A097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470F79282ADD6BEE0058A097 /* Assets.xcassets */; };
+		470F792C2ADD6BEE0058A097 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470F792B2ADD6BEE0058A097 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,11 @@
 		470F79082ADD698B0058A097 /* SwiftyLibrary.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftyLibrary.docc; sourceTree = "<group>"; };
 		470F790E2ADD698B0058A097 /* SwiftyLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		470F79132ADD698B0058A097 /* SwiftyLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibraryTests.swift; sourceTree = "<group>"; };
+		470F79222ADD6BED0058A097 /* SwiftyLibraryExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyLibraryExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		470F79242ADD6BED0058A097 /* SwiftyLibraryExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibraryExamplesApp.swift; sourceTree = "<group>"; };
+		470F79262ADD6BED0058A097 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		470F79282ADD6BEE0058A097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		470F792B2ADD6BEE0058A097 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		470F791F2ADD6BED0058A097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +71,7 @@
 			children = (
 				470F79062ADD698B0058A097 /* SwiftyLibrary */,
 				470F79122ADD698B0058A097 /* SwiftyLibraryTests */,
+				470F79232ADD6BED0058A097 /* SwiftyLibraryExamples */,
 				470F79052ADD698B0058A097 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +81,7 @@
 			children = (
 				470F79042ADD698B0058A097 /* SwiftyLibrary.framework */,
 				470F790E2ADD698B0058A097 /* SwiftyLibraryTests.xctest */,
+				470F79222ADD6BED0058A097 /* SwiftyLibraryExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +101,25 @@
 				470F79132ADD698B0058A097 /* SwiftyLibraryTests.swift */,
 			);
 			path = SwiftyLibraryTests;
+			sourceTree = "<group>";
+		};
+		470F79232ADD6BED0058A097 /* SwiftyLibraryExamples */ = {
+			isa = PBXGroup;
+			children = (
+				470F79242ADD6BED0058A097 /* SwiftyLibraryExamplesApp.swift */,
+				470F79262ADD6BED0058A097 /* ContentView.swift */,
+				470F79282ADD6BEE0058A097 /* Assets.xcassets */,
+				470F792A2ADD6BEE0058A097 /* Preview Content */,
+			);
+			path = SwiftyLibraryExamples;
+			sourceTree = "<group>";
+		};
+		470F792A2ADD6BEE0058A097 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				470F792B2ADD6BEE0058A097 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +172,23 @@
 			productReference = 470F790E2ADD698B0058A097 /* SwiftyLibraryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		470F79212ADD6BED0058A097 /* SwiftyLibraryExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470F792D2ADD6BEE0058A097 /* Build configuration list for PBXNativeTarget "SwiftyLibraryExamples" */;
+			buildPhases = (
+				470F791E2ADD6BED0058A097 /* Sources */,
+				470F791F2ADD6BED0058A097 /* Frameworks */,
+				470F79202ADD6BED0058A097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyLibraryExamples;
+			productName = SwiftyLibraryExamples;
+			productReference = 470F79222ADD6BED0058A097 /* SwiftyLibraryExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +203,9 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					470F790D2ADD698B0058A097 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					470F79212ADD6BED0058A097 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -168,6 +225,7 @@
 			targets = (
 				470F79032ADD698B0058A097 /* SwiftyLibrary */,
 				470F790D2ADD698B0058A097 /* SwiftyLibraryTests */,
+				470F79212ADD6BED0058A097 /* SwiftyLibraryExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +245,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		470F79202ADD6BED0058A097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F792C2ADD6BEE0058A097 /* Preview Assets.xcassets in Resources */,
+				470F79292ADD6BEE0058A097 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -203,6 +270,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				470F79142ADD698B0058A097 /* SwiftyLibraryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470F791E2ADD6BED0058A097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470F79272ADD6BED0058A097 /* ContentView.swift in Sources */,
+				470F79252ADD6BED0058A097 /* SwiftyLibraryExamplesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +507,64 @@
 			};
 			name = Release;
 		};
+		470F792E2ADD6BEE0058A097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyLibraryExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9PJR2466S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thechsee.SwiftyLibraryOrg.SwiftyLibraryExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		470F792F2ADD6BEE0058A097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyLibraryExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9PJR2466S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thechsee.SwiftyLibraryOrg.SwiftyLibraryExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,6 +591,15 @@
 			buildConfigurations = (
 				470F791C2ADD698B0058A097 /* Debug */,
 				470F791D2ADD698B0058A097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470F792D2ADD6BEE0058A097 /* Build configuration list for PBXNativeTarget "SwiftyLibraryExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470F792E2ADD6BEE0058A097 /* Debug */,
+				470F792F2ADD6BEE0058A097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
