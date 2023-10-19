@@ -10,11 +10,11 @@
 		470F79092ADD698B0058A097 /* SwiftyLibrary.docc in Sources */ = {isa = PBXBuildFile; fileRef = 470F79082ADD698B0058A097 /* SwiftyLibrary.docc */; };
 		470F790F2ADD698B0058A097 /* SwiftyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470F79042ADD698B0058A097 /* SwiftyLibrary.framework */; };
 		470F79142ADD698B0058A097 /* SwiftyLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F79132ADD698B0058A097 /* SwiftyLibraryTests.swift */; };
-		470F79152ADD698B0058A097 /* SwiftyLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 470F79072ADD698B0058A097 /* SwiftyLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		470F79252ADD6BED0058A097 /* SwiftyLibraryExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F79242ADD6BED0058A097 /* SwiftyLibraryExamplesApp.swift */; };
 		470F79272ADD6BED0058A097 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F79262ADD6BED0058A097 /* ContentView.swift */; };
 		470F79292ADD6BEE0058A097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470F79282ADD6BEE0058A097 /* Assets.xcassets */; };
 		470F792C2ADD6BEE0058A097 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470F792B2ADD6BEE0058A097 /* Preview Assets.xcassets */; };
+		470F79312AE0841C0058A097 /* SwiftyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F79302AE0841C0058A097 /* SwiftyLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		470F79042ADD698B0058A097 /* SwiftyLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		470F79072ADD698B0058A097 /* SwiftyLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyLibrary.h; sourceTree = "<group>"; };
 		470F79082ADD698B0058A097 /* SwiftyLibrary.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftyLibrary.docc; sourceTree = "<group>"; };
 		470F790E2ADD698B0058A097 /* SwiftyLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		470F79132ADD698B0058A097 /* SwiftyLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibraryTests.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		470F79262ADD6BED0058A097 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		470F79282ADD6BEE0058A097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		470F792B2ADD6BEE0058A097 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		470F79302AE0841C0058A097 /* SwiftyLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +89,8 @@
 		470F79062ADD698B0058A097 /* SwiftyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				470F79072ADD698B0058A097 /* SwiftyLibrary.h */,
 				470F79082ADD698B0058A097 /* SwiftyLibrary.docc */,
+				470F79302AE0841C0058A097 /* SwiftyLibrary.swift */,
 			);
 			path = SwiftyLibrary;
 			sourceTree = "<group>";
@@ -129,7 +129,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				470F79152ADD698B0058A097 /* SwiftyLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				470F79092ADD698B0058A097 /* SwiftyLibrary.docc in Sources */,
+				470F79312AE0841C0058A097 /* SwiftyLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +478,7 @@
 		470F791C2ADD698B0058A097 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y9PJR2466S;
@@ -494,6 +495,7 @@
 		470F791D2ADD698B0058A097 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y9PJR2466S;
