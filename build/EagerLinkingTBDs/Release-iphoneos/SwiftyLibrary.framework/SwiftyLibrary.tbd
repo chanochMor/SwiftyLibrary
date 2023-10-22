@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-ios ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/SwiftyLibrary.framework/SwiftyLibrary'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios ]
+    symbols:         [ '_$s13SwiftyLibraryAAC3add1a1bS2i_SitF', '_$s13SwiftyLibraryAAC3sub1a1bS2i_SitF', 
+                       '_$s13SwiftyLibraryAAC4nameSSvpfi', '_$s13SwiftyLibraryAACMa', 
+                       '_$s13SwiftyLibraryAACMm', '_$s13SwiftyLibraryAACMn', '_$s13SwiftyLibraryAACN', 
+                       '_$s13SwiftyLibraryAACfD', '_$s13SwiftyLibraryAACfd', _SwiftyLibraryVersionNumber, 
+                       _SwiftyLibraryVersionString ]
+...

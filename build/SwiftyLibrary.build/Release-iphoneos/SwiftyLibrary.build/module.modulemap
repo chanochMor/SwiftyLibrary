@@ -1,0 +1,4 @@
+framework module SwiftyLibrary {
+  header "SwiftyLibrary-Swift.h"
+  requires objc
+}

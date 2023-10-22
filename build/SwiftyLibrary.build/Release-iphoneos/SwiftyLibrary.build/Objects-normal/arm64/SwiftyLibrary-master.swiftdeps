@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "b76c581e6f83d94ebc08f409c629334968384ee29841894c36e4671db0ad18a9"
+build_start_time: [1697972344, 547149000]
+build_end_time: [1697972349, 562152000]
+inputs:
+  "/Users/hanoch.mordkovich/Desktop/TechSee-Frameworks/SwiftyLibrary/SwiftyLibrary/SwiftyLibrary.swift": [1697664411, 616917853]
